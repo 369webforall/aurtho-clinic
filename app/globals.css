@@ -1,0 +1,455 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+    /* Core Healthcare Color System - Trust Blue Foundation */
+    --background: oklch(0.99 0.005 220);
+    --foreground: oklch(0.15 0.02 240);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.15 0.02 240);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.15 0.02 240);
+
+    /* Primary - Deep Trust Blue */
+    --primary: oklch(0.35 0.18 245);
+    --primary-foreground: oklch(0.99 0.005 220);
+    --primary-hover: oklch(0.30 0.20 245);
+    --primary-light: oklch(0.88 0.08 240);
+
+    /* Secondary - Warm Neutral */
+    --secondary: oklch(0.96 0.01 240);
+    --secondary-foreground: oklch(0.25 0.02 240);
+
+    /* Muted */
+    --muted: oklch(0.96 0.01 240);
+    --muted-foreground: oklch(0.45 0.02 240);
+
+    /* Accent - Healing Green */
+    --accent: oklch(0.92 0.06 145);
+    --accent-foreground: oklch(0.25 0.08 145);
+    --accent-hover: oklch(0.85 0.08 145);
+
+    /* Destructive - Medical Red */
+    --destructive: oklch(0.55 0.22 25);
+    --destructive-foreground: oklch(0.99 0.005 220);
+
+    /* Borders & Inputs */
+    --border: oklch(0.90 0.01 240);
+    --input: oklch(0.90 0.01 240);
+    --ring: oklch(0.35 0.18 245);
+
+    /* Charts */
+    --chart-1: oklch(0.35 0.18 245);
+    --chart-2: oklch(0.45 0.12 145);
+    --chart-3: oklch(0.55 0.15 45);
+    --chart-4: oklch(0.65 0.18 320);
+    --chart-5: oklch(0.75 0.15 60);
+
+    /* Radius */
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar: oklch(0.98 0.005 220);
+    --sidebar-foreground: oklch(0.15 0.02 240);
+    --sidebar-primary: oklch(0.35 0.18 245);
+    --sidebar-primary-foreground: oklch(0.99 0.005 220);
+    --sidebar-accent: oklch(0.92 0.01 240);
+    --sidebar-accent-foreground: oklch(0.25 0.02 240);
+    --sidebar-border: oklch(0.90 0.01 240);
+    --sidebar-ring: oklch(0.35 0.18 245);
+
+    /* Healthcare Semantic Colors */
+    --healthcare-trust: oklch(0.35 0.18 245);
+    --healthcare-trust-light: oklch(0.88 0.08 240);
+    --healthcare-trust-dark: oklch(0.28 0.20 245);
+    --healthcare-healing: oklch(0.48 0.14 145);
+    --healthcare-healing-light: oklch(0.92 0.06 145);
+    --healthcare-warmth: oklch(0.65 0.15 45);
+    --healthcare-warmth-light: oklch(0.94 0.06 45);
+    --healthcare-bg: oklch(0.99 0.005 220);
+    --healthcare-surface: oklch(1 0 0);
+    --healthcare-border: oklch(0.90 0.01 240);
+    --healthcare-text: oklch(0.15 0.02 240);
+    --healthcare-text-muted: oklch(0.45 0.02 240);
+    --healthcare-error: oklch(0.55 0.22 25);
+    --healthcare-success: oklch(0.48 0.14 145);
+
+    /* CTA / Primary Action Colors - Softer Medical Teal for hospital/clinic feel */
+    --healthcare-cta: oklch(0.42 0.12 195);
+    --healthcare-cta-light: oklch(0.90 0.06 195);
+    --healthcare-cta-dark: oklch(0.35 0.14 195);
+    --healthcare-cta-foreground: oklch(0.98 0.01 220);
+    --healthcare-cta-gradient: linear-gradient(135deg, oklch(0.42 0.12 195) 0%, oklch(0.30 0.10 195) 100%);
+    --healthcare-cta-button-bg: white;
+    --healthcare-cta-button-text: oklch(0.42 0.12 195);
+    --healthcare-cta-button-hover: oklch(0.95 0.03 195);
+}
+
+.dark {
+    --background: oklch(0.08 0.01 240);
+    --foreground: oklch(0.96 0.01 240);
+    --card: oklch(0.10 0.01 240);
+    --card-foreground: oklch(0.96 0.01 240);
+    --popover: oklch(0.10 0.01 240);
+    --popover-foreground: oklch(0.96 0.01 240);
+    --primary: oklch(0.65 0.15 245);
+    --primary-foreground: oklch(0.08 0.01 240);
+    --primary-hover: oklch(0.70 0.13 245);
+    --primary-light: oklch(0.25 0.12 245);
+    --secondary: oklch(0.15 0.01 240);
+    --secondary-foreground: oklch(0.90 0.01 240);
+    --muted: oklch(0.15 0.01 240);
+    --muted-foreground: oklch(0.60 0.01 240);
+    --accent: oklch(0.22 0.08 145);
+    --accent-foreground: oklch(0.90 0.05 145);
+    --accent-hover: oklch(0.28 0.10 145);
+    --destructive: oklch(0.65 0.20 25);
+    --destructive-foreground: oklch(0.96 0.01 240);
+    --border: oklch(0.20 0.01 240);
+    --input: oklch(0.20 0.01 240);
+    --ring: oklch(0.65 0.15 245);
+    --chart-1: oklch(0.65 0.15 245);
+    --chart-2: oklch(0.55 0.12 145);
+    --chart-3: oklch(0.65 0.15 45);
+    --chart-4: oklch(0.75 0.18 320);
+    --chart-5: oklch(0.80 0.15 60);
+    --sidebar: oklch(0.09 0.01 240);
+    --sidebar-foreground: oklch(0.96 0.01 240);
+    --sidebar-primary: oklch(0.65 0.15 245);
+    --sidebar-primary-foreground: oklch(0.08 0.01 240);
+    --sidebar-accent: oklch(0.15 0.01 240);
+    --sidebar-accent-foreground: oklch(0.90 0.01 240);
+    --sidebar-border: oklch(0.20 0.01 240);
+    --sidebar-ring: oklch(0.65 0.15 245);
+
+    --healthcare-trust: oklch(0.65 0.15 245);
+    --healthcare-trust-light: oklch(0.25 0.12 245);
+    --healthcare-trust-dark: oklch(0.72 0.13 245);
+    --healthcare-healing: oklch(0.55 0.12 145);
+    --healthcare-healing-light: oklch(0.22 0.08 145);
+    --healthcare-warmth: oklch(0.70 0.13 45);
+    --healthcare-warmth-light: oklch(0.18 0.06 45);
+    --healthcare-bg: oklch(0.08 0.01 240);
+    --healthcare-surface: oklch(0.10 0.01 240);
+    --healthcare-border: oklch(0.20 0.01 240);
+    --healthcare-text: oklch(0.96 0.01 240);
+    --healthcare-text-muted: oklch(0.60 0.01 240);
+    --healthcare-error: oklch(0.65 0.20 25);
+    --healthcare-success: oklch(0.55 0.12 145);
+
+    /* CTA / Primary Action Colors - Softer Medical Teal for hospital/clinic feel */
+    --healthcare-cta: oklch(0.55 0.10 195);
+    --healthcare-cta-light: oklch(0.22 0.06 195);
+    --healthcare-cta-dark: oklch(0.62 0.12 195);
+    --healthcare-cta-foreground: oklch(0.08 0.01 240);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  html {
+    @apply font-sans scroll-smooth;
+  }
+
+  /* Focus visible for accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Text selection */
+  ::selection {
+    @apply bg-primary/20 text-primary-foreground;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full hover:bg-muted-foreground/50;
+  }
+}
+
+@layer utilities {
+  /* Healthcare-specific utilities - using CSS variables directly */
+  .text-healthcare-trust { color: var(--healthcare-trust); }
+  .text-healthcare-healing { color: var(--healthcare-healing); }
+  .text-healthcare-warmth { color: var(--healthcare-warmth); }
+  .text-healthcare-text { color: var(--healthcare-text); }
+  .text-healthcare-muted { color: var(--healthcare-text-muted); }
+  .bg-healthcare-bg { background-color: var(--healthcare-bg); }
+  .bg-healthcare-surface { background-color: var(--healthcare-surface); }
+  .bg-healthcare-trust { background-color: var(--healthcare-trust); }
+  .bg-healthcare-healing { background-color: var(--healthcare-healing); }
+  .bg-healthcare-warmth { background-color: var(--healthcare-warmth); }
+  .border-healthcare { border-color: var(--healthcare-border); }
+
+  /* CTA / Primary Action utilities - Softer Medical Teal */
+  .bg-healthcare-cta { background-color: var(--healthcare-cta); }
+  .bg-healthcare-cta-light { background-color: var(--healthcare-cta-light); }
+  .bg-healthcare-cta-dark { background-color: var(--healthcare-cta-dark); }
+  .text-healthcare-cta { color: var(--healthcare-cta); }
+  .text-healthcare-cta-foreground { color: var(--healthcare-cta-foreground); }
+
+  /* Animation utilities */
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-out forwards;
+  }
+  .animate-scale-in {
+    animation: scale-in 0.3s ease-out forwards;
+  }
+
+  /* Stagger delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+  .delay-600 { animation-delay: 600ms; }
+
+  /* Text balance */
+  .text-balance { text-wrap: balance; }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section spacing */
+  .section-py { @apply py-16 sm:py-24 lg:py-32; }
+  .section-px { @apply px-4 sm:px-6 lg:px-8; }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-[var(--healthcare-healing)] bg-clip-text text-transparent;
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Button variants */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-200 hover:bg-primary/90 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground shadow-sm transition-all duration-200 hover:bg-secondary/80 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-primary px-6 py-3 text-sm font-semibold text-primary transition-all duration-200 hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-foreground transition-all duration-200 hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-link {
+    @apply inline-flex items-center gap-1 text-sm font-medium text-primary underline-offset-4 hover:underline transition-colors duration-200;
+  }
+
+  /* Input styles */
+  .input-field {
+    @apply w-full rounded-xl border border-input bg-background px-4 py-3 text-sm transition-all duration-200 placeholder:text-muted-foreground focus:border-ring focus:ring-2 focus:ring-ring/20 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .label-field {
+    @apply mb-2 block text-sm font-medium text-foreground;
+  }
+
+  /* Card base */
+  .card-base {
+    @apply rounded-2xl border border-border bg-card text-card-foreground shadow-sm transition-all duration-300;
+  }
+
+  /* Section header */
+  .section-header {
+    @apply max-w-3xl mx-auto text-center;
+  }
+  .section-badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium mb-4;
+    background-color: var(--healthcare-trust-light);
+    color: var(--healthcare-trust);
+  }
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--healthcare-text);
+  }
+  .section-subtitle {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--healthcare-text-muted);
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 640px) {
+    .section-subtitle {
+      font-size: 1.125rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section-title {
+      font-size: 3rem;
+    }
+    .section-subtitle {
+      font-size: 1.25rem;
+    }
+  }
+  @media (min-width: 1280px) {
+    .section-title {
+      font-size: 3.75rem;
+    }
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hero gradient background */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.99 0.005 220) 0%,
+    oklch(0.96 0.03 230) 50%,
+    oklch(0.93 0.05 145) 100%
+  );
+}
+
+.dark .hero-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.08 0.01 240) 0%,
+    oklch(0.10 0.02 245) 50%,
+    oklch(0.12 0.03 150) 100%
+  );
+}
+
+/* Trust badge animation */
+@keyframes pulse-trust {
+  0%, 100% { box-shadow: 0 0 0 0 oklch(0.35 0.18 245 / 0.4); }
+  50% { box-shadow: 0 0 0 10px oklch(0.35 0.18 245 / 0); }
+}
+
+.animate-pulse-trust {
+  animation: pulse-trust 2s infinite;
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply animate-pulse bg-muted rounded;
+}
+
+/* Print styles */
+@media print {
+  .no-print { display: none !important; }
+}
