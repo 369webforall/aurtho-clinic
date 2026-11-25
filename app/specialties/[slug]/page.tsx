@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: SpecialtyPageProps): Promise<
     title: `${specialty.name} | Specialties & Services`,
     description: specialty.description,
     openGraph: {
-      title: `${specialty.name} - AurTho Clinic`,
+      title: `${specialty.name} - OrthoPedic Clinic`,
       description: specialty.description,
       type: "website",
     },

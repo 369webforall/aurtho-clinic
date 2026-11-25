@@ -18,16 +18,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "AurTho Clinic - Premium Orthopedic Care & Joint Specialists",
-    template: "%s | AurTho Clinic",
+    default: "OrthoPedic Clinic - Premium Orthopedic Care & Joint Specialists",
+    template: "%s | OrthoPedic Clinic",
   },
   description:
     "Expert orthopedic care and treatment for joint replacement, sports medicine, spine care, and more. Schedule a consultation with our board-certified specialists today.",
   keywords:
     "orthopedic clinic, orthopedic surgeon, joint replacement, sports medicine, spine care, bone health, orthopedic treatment, knee replacement, hip replacement, shoulder surgery",
-  authors: [{ name: "AurTho Clinic" }],
-  creator: "AurTho Clinic",
-  publisher: "AurTho Clinic",
+  authors: [{ name: "OrthoPedic Clinic" }],
+  creator: "OrthoPedic Clinic",
+  publisher: "OrthoPedic Clinic",
   robots: {
     index: true,
     follow: true,
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://aurtho-clinic.com",
-    siteName: "AurTho Clinic",
-    title: "AurTho Clinic - Premium Orthopedic Care & Joint Specialists",
+    url: "https://orthopedic-clinic.com",
+    siteName: "OrthoPedic Clinic",
+    title: "OrthoPedic Clinic - Premium Orthopedic Care & Joint Specialists",
     description:
       "Expert orthopedic care and treatment for joint replacement, sports medicine, spine care, and more. Schedule a consultation with our board-certified specialists today.",
     images: [
@@ -52,17 +52,17 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "AurTho Clinic - Premium Orthopedic Care",
+        alt: "OrthoPedic Clinic - Premium Orthopedic Care",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AurTho Clinic - Premium Orthopedic Care",
+    title: "OrthoPedic Clinic - Premium Orthopedic Care",
     description:
       "Expert orthopedic care for joint replacement, sports medicine, spine care, and more.",
     images: ["/og-image.jpg"],
-    creator: "@aurthoclinic",
+    creator: "@orthopedicclinic",
   },
   verification: {
     google: "google-site-verification-code",

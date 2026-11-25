@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   title: "Specialties & Services",
   description: "Explore our comprehensive orthopedic specialties including joint replacement, sports medicine, spine care, hand & wrist, foot & ankle, and pediatric orthopedics. Subspecialty-trained experts providing personalized care.",
   openGraph: {
-    title: "Specialties & Services - AurTho Clinic",
+    title: "Specialties & Services - OrthoPedic Clinic",
     description: "Comprehensive orthopedic care across 6 subspecialties with fellowship-trained experts.",
     type: "website",
   },
@@ -247,7 +247,7 @@ export default function SpecialtiesPage() {
       <section className="section-py bg-healthcare-bg" aria-labelledby="why-heading">
         <div className="container-custom">
           <div className="section-header mb-16 max-w-3xl">
-            <span className="section-badge">The AurTho Advantage</span>
+            <span className="section-badge">The OrthoPedic Advantage</span>
             <h2 id="why-heading" className="section-title">Why Choose Our Specialty Centers</h2>
             <p className="section-subtitle">Each center is designed around the unique needs of its subspecialty, delivering focused expertise and better outcomes.</p>
           </div>

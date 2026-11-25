@@ -57,9 +57,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: physician.name,
-    description: `${physician.title} at AurTho Clinic. ${physician.bio.substring(0, 160)}...`,
+    description: `${physician.title} at OrthoPedic Clinic. ${physician.bio.substring(0, 160)}...`,
     openGraph: {
-      title: `${physician.name} - AurTho Clinic`,
+      title: `${physician.name} - OrthoPedic Clinic`,
       description: physician.bio.substring(0, 160),
       type: "profile",
       images: physician.image ? [`/physicians${physician.image}`] : [],

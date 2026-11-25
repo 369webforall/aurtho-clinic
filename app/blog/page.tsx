@@ -47,9 +47,9 @@ import {
 
 export const metadata: Metadata = {
   title: "Blog & Insights",
-  description: "Expert insights on orthopedic health, recovery guides, injury prevention, and treatment advances from our fellowship-trained specialists at AurTho Clinic.",
+  description: "Expert insights on orthopedic health, recovery guides, injury prevention, and treatment advances from our fellowship-trained specialists at OrthoPedic Clinic.",
   openGraph: {
-    title: "Blog & Insights - AurTho Clinic",
+    title: "Blog & Insights - OrthoPedic Clinic",
     description: "Expert orthopedic insights, recovery guides, and treatment advances from our specialists.",
     type: "website",
   },

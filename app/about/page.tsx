@@ -29,9 +29,9 @@ import {
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about AurTho Clinic's mission, values, leadership team, history, accreditations, and commitment to excellence in orthopedic care.",
+  description: "Learn about OrthoPedic Clinic's mission, values, leadership team, history, accreditations, and commitment to excellence in orthopedic care.",
   openGraph: {
-    title: "About AurTho Clinic - Premium Orthopedic Care",
+    title: "About OrthoPedic Clinic - Premium Orthopedic Care",
     description: "Learn about our mission, values, leadership team, history, and commitment to excellence in orthopedic care.",
     type: "website",
   },
@@ -102,7 +102,7 @@ const milestones = [
   { year: "2005", title: "Joint Replacement Center Opens", description: "Dedicated center for hip and knee replacement performing 200+ procedures annually." },
   { year: "2010", title: "Sports Medicine Expansion", description: "Partnership with professional sports teams; Sports Medicine Center opens with biomechanics lab." },
   { year: "2015", title: "Spine Institute Established", description: "Comprehensive spine program with minimally invasive surgery and navigation technology." },
-  { year: "2018", title: "Rebranded as AurTho Clinic", description: "Unified brand reflecting gold-standard (Aur = gold, Tho = ortho) orthopedic excellence across all locations." },
+  { year: "2018", title: "Rebranded as OrthoPedic Clinic", description: "Unified brand reflecting gold-standard orthopedic excellence across all locations." },
   { year: "2020", title: "Robotic Surgery Program", description: "Mako and Mazor X robotic systems implemented for joint replacement and spine surgery precision." },
   { year: "2022", title: "Pediatric Orthopedic Center", description: "Dedicated pediatric facility with EOS low-dose imaging and child-friendly spaces opens." },
   { year: "2024", title: "8 Locations, 50+ Surgeons", description: "Network spans metropolitan region with 15,000+ surgeries annually and top national rankings." },
@@ -125,7 +125,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--healthcare-trust-light)_0%,_transparent_70%)] opacity-50" aria-hidden="true" />
         <div className="container-custom relative">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="section-badge animate-fade-in-up">About AurTho Clinic</span>
+            <span className="section-badge animate-fade-in-up">About OrthoPedic Clinic</span>
             <h1 id="about-hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-healthcare-text mt-4 mb-6 animate-fade-in-up delay-100 text-balance">
               Excellence in Orthopedic Care
               <br />
@@ -342,7 +342,7 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h2 id="cta-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-healthcare-text mb-6">
-              Experience the AurTho Difference
+              Experience the OrthoPedic Difference
             </h2>
             <p className="text-lg text-healthcare-muted mb-10 max-w-2xl mx-auto">
               Schedule a consultation with one of our board-certified specialists and discover why patients trust us with their orthopedic care.

@@ -79,7 +79,7 @@ export function Footer() {
             <Link
               href="/"
               className="flex items-center gap-2 text-healthcare-trust font-bold text-xl tracking-tight mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
-              aria-label="AurTho Clinic Home"
+              aria-label="OrthoPedic Clinic Home"
             >
               <svg
                 className="h-8 w-8"
@@ -89,7 +89,7 @@ export function Footer() {
               >
                 <path d="M12 3v8l2 2L12 3ZM12 9v8l4-4-4-4ZM6 9l6-3 3 6-6 3Z" />
               </svg>
-              <span>AurTho Clinic</span>
+              <span>OrthoPedic Clinic</span>
             </Link>
             <p className="text-healthcare-muted text-sm leading-relaxed mb-6 max-w-xs">
               Restoring mobility and quality of life through expert orthopedic care.
@@ -185,8 +185,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-healthcare-trust flex-shrink-0" aria-hidden="true" />
-                <a href="mailto:info@aurtho-clinic.com" className="hover:text-healthcare-trust transition-colors">
-                  info@aurtho-clinic.com
+                <a href="mailto:info@orthopedic-clinic.com" className="hover:text-healthcare-trust transition-colors">
+                  info@orthopedic-clinic.com
                 </a>
               </div>
               <div className="pt-2 border-t border-border">
@@ -214,7 +214,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-healthcare-muted">
-              © {year} AurTho Clinic. All rights reserved.
+              © {year} OrthoPedic Clinic. All rights reserved.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
               <Link

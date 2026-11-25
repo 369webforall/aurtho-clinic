@@ -291,14 +291,14 @@ export default function ContactForm() {
                 <CardDescription className="text-healthcare-muted">General inquiries & records</CardDescription>
               </CardHeader>
               <CardContent className="pt-0">
-                <a href="mailto:info@aurtho-clinic.com" className="text-lg font-medium text-healthcare-text hover:text-healthcare-healing transition-colors block mb-2 break-all">
-                  info@aurtho-clinic.com
+                <a href="mailto:info@orthopedic-clinic.com" className="text-lg font-medium text-healthcare-text hover:text-healthcare-healing transition-colors block mb-2 break-all">
+                  info@orthopedic-clinic.com
                 </a>
-                <a href="mailto:medicalrecords@aurtho-clinic.com" className="text-sm text-healthcare-muted block mb-2 hover:text-healthcare-healing transition-colors">
-                  medicalrecords@aurtho-clinic.com
+                <a href="mailto:medicalrecords@orthopedic-clinic.com" className="text-sm text-healthcare-muted block mb-2 hover:text-healthcare-healing transition-colors">
+                  medicalrecords@orthopedic-clinic.com
                 </a>
-                <a href="mailto:billing@aurtho-clinic.com" className="text-sm text-healthcare-muted block hover:text-healthcare-healing transition-colors">
-                  billing@aurtho-clinic.com
+                <a href="mailto:billing@orthopedic-clinic.com" className="text-sm text-healthcare-muted block hover:text-healthcare-healing transition-colors">
+                  billing@orthopedic-clinic.com
                 </a>
               </CardContent>
             </Card>
@@ -657,7 +657,7 @@ export default function ContactForm() {
                       <Stethoscope className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <div>
-                      <CardTitle className="text-lg">Why Choose AurTho Clinic?</CardTitle>
+                      <CardTitle className="text-lg">Why Choose OrthoPedic Clinic?</CardTitle>
                       <CardDescription className="text-healthcare-muted">Fellowship-trained specialists</CardDescription>
                     </div>
                   </div>

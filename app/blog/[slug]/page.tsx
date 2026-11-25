@@ -47,22 +47,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return {
-      title: "Article Not Found - AurTho Clinic Blog",
+      title: "Article Not Found - OrthoPedic Clinic Blog",
     };
   }
 
-  const baseUrl = "https://aurtho-clinic.com";
+  const baseUrl = "https://orthopedic-clinic.com";
   const articleUrl = `${baseUrl}/blog/${post.slug}`;
 
   return {
-    title: `${post.title} - AurTho Clinic Blog`,
+    title: `${post.title} - OrthoPedic Clinic Blog`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
       url: articleUrl,
-      siteName: "AurTho Clinic",
+      siteName: "OrthoPedic Clinic",
       publishedTime: post.publishDate,
       authors: [post.author],
       tags: post.tags,
@@ -99,7 +99,7 @@ export default async function BlogArticlePage({ params }: Props) {
     .filter((p) => p.category === post.category && p.slug !== post.slug)
     .slice(0, 3);
 
-  const baseUrl = "https://aurtho-clinic.com";
+  const baseUrl = "https://orthopedic-clinic.com";
   const articleUrl = `${baseUrl}/blog/${post.slug}`;
   const shareText = encodeURIComponent(post.title);
   const shareUrl = encodeURIComponent(articleUrl);

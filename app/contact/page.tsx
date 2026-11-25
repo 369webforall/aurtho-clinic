@@ -3,9 +3,9 @@ import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us & Book an Appointment",
-  description: "Contact AurTho Clinic for orthopedic care. Book appointments online, find our locations, view hours, and get answers to frequently asked questions. Fellowship-trained specialists ready to help.",
+  description: "Contact OrthoPedic Clinic for orthopedic care. Book appointments online, find our locations, view hours, and get answers to frequently asked questions. Fellowship-trained specialists ready to help.",
   openGraph: {
-    title: "Contact Us & Book an Appointment - AurTho Clinic",
+    title: "Contact Us & Book an Appointment - OrthoPedic Clinic",
     description: "Schedule your orthopedic appointment online. Multiple locations, extended hours, and fellowship-trained specialists.",
     type: "website",
   },

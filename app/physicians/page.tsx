@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   title: "Our Physicians",
   description: "Meet our board-certified, fellowship-trained orthopedic surgeons. 50+ specialists across 8 locations providing expert care for joint replacement, sports medicine, spine, and more.",
   openGraph: {
-    title: "Our Physicians - AurTho Clinic",
+    title: "Our Physicians - OrthoPedic Clinic",
     description: "Meet our board-certified, fellowship-trained orthopedic surgeons across all specialties.",
     type: "website",
   },

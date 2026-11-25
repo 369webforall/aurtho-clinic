@@ -46,9 +46,9 @@ import {
 
 export const metadata: Metadata = {
   title: "Locations & Hours",
-  description: "Find an AurTho Clinic location near you. 9 locations across Metropolitan City including our Main Campus, specialty centers, and Urgent Ortho Care walk-in clinic. View hours, services, parking, and transit info.",
+  description: "Find an OrthoPedic Clinic location near you. 9 locations across Metropolitan City including our Main Campus, specialty centers, and Urgent Ortho Care walk-in clinic. View hours, services, parking, and transit info.",
   openGraph: {
-    title: "Locations & Hours - AurTho Clinic",
+    title: "Locations & Hours - OrthoPedic Clinic",
     description: "9 convenient locations with specialized orthopedic centers. View hours, services, parking, and public transit.",
     type: "website",
   },

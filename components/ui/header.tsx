@@ -48,7 +48,7 @@ export function Header() {
           <Link
             href="/"
             className="flex items-center gap-2 text-healthcare-trust font-bold text-xl sm:text-2xl tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
-            aria-label="AurTho Clinic Home"
+            aria-label="OrthoPedic Clinic Home"
           >
             <svg
               className="h-8 w-8 sm:h-9 sm:w-9"
@@ -58,7 +58,7 @@ export function Header() {
             >
               <path d="M12 3v8l2 2L12 3ZM12 9v8l4-4-4-4ZM6 9l6-3 3 6-6 3Z" />
             </svg>
-            <span>AurTho Clinic</span>
+            <span>OrthoPedic Clinic</span>
           </Link>
 
           {/* Desktop Navigation */}

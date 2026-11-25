@@ -44,9 +44,9 @@ import {
 
 export const metadata: Metadata = {
   title: "Patient Resources",
-  description: "Access patient forms, pre/post-surgery guides, insurance verification, payment options, educational videos, and the patient portal at AurTho Clinic.",
+  description: "Access patient forms, pre/post-surgery guides, insurance verification, payment options, educational videos, and the patient portal at OrthoPedic Clinic.",
   openGraph: {
-    title: "Patient Resources - AurTho Clinic",
+    title: "Patient Resources - OrthoPedic Clinic",
     description: "Complete patient resources including forms, guides, videos, insurance info, and portal access.",
     type: "website",
   },
@@ -245,7 +245,7 @@ export default function PatientResourcesPage() {
                 title: "Patient Portal",
                 description: "Results, messages, appointments",
                 icon: Lock,
-                href: "https://portal.aurtho-clinic.com",
+                href: "https://portal.orthopedic-clinic.com",
                 color: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
                 badge: "Portal",
                 external: true,

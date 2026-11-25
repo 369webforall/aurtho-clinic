@@ -215,7 +215,7 @@ export default function Home() {
       <section className="section-py bg-healthcare-surface" aria-labelledby="features-heading">
         <div className="container-custom">
           <div className="section-header mb-16">
-            <span className="section-badge">Why Choose AurTho Clinic</span>
+            <span className="section-badge">Why Choose OrthoPedic Clinic</span>
             <h2 id="features-heading" className="section-title">
               Excellence in Every Aspect of Your Care
             </h2>
